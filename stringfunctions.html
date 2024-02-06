@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let str="i like listening to music!!!"
+        // console.log(str.length);
+
+        // console.log(str.toLowerCase());
+        // console.log(str.toUpperCase());
+        // console.log(str.includes("to"));
+        // console.log(str.includes("To"));
+        // console.log(str.IndexOf("m",2));
+        
+        // console.log(str.replace("music","songs"));
+
+        let domain="predrag@gmail&.com & academy";
+        console.log(domain.toUpperCase().endsWith(".COM"));
+        console.log(domain.trim());
+        console.log(domain.trim().startsWith("pr",5));
+        console.log(domain.replace("&","and"));
+        
+        console.log(domain.replace("&","and"));
+        let pattern=/&/g;
+        let globstr=domain.replace(pattern,"AND");
+        console.log(globstr);
+        console.log(domain.slice());
+    </script>
+</body>
+</html>

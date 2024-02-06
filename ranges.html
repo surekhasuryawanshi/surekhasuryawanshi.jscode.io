@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./father-822550_640.jpg" width="600" id="img">
+    blur : <input type="range" id="blur" min="0" max="10" onchange="imgfilter(this.value,this.id)">
+    brightness: <input type="range" id="brightness" min="0" max="100" onchange="imgfilter(this.value,this.id)">
+    constrast: <input type="range" id="constrast" min="0" max="100" onchange="imgfilter(this.value,this.id)">
+    grayscale: <input type="range" id="grayscale" min="0" max="100" onchange="imgfilter(this.value,this.id)">
+
+
+
+    <script type="text/javascript">
+       function imgfilter(val,id){
+        if(id=="blur"){
+            document.getElementById('img').style.filter="blur("+val+"px)";
+        }
+        else if(id=="brightness"){
+            document.getElementById('img').style.filter="brightness("+val+"%)";
+        }
+       }
+    </script>
+</body>
+</html>

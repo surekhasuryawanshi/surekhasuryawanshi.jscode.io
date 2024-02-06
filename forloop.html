@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    //fimd anagram string
+        let str1 = "listen";
+        let str2 ="silend";
+         
+        function findAnagram(str1,str2){
+            let a=str1.toLowerCase();
+            let b=str2.toLowerCase();
+             console.log(a,b);
+
+            a=a.split("").sort().join("");
+            b=b.split("").sort().join("");
+
+            console.log(a,b);
+
+            if(a===b){
+                console.log("anagram string")
+            }
+            else{
+                console.log(" not anagram string")
+            }
+        }
+         let res =findAnagram(str1,str2);
+         console.log(res)
+    </script>
+</body>
+</html>
