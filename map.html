@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,2,3,4];
+        arr.forEach(function(item){
+            console.log(item*2)
+        });
+
+        let maparr=arr.map(num=>num*2)
+        console.log(maparr);
+
+        const student=[
+            {name:"abc",grade:"50",ispass:true},
+            {name:"efg",grade:"50",ispass:false},
+            {name:"pqr",grade:"60",ispass:true},
+            {name:"xyz",grade:"70",ispass:false}
+            
+                
+        ];
+        let result=student.filter(user=>user.grade>=50 && user.ispass)
+        console.log(result);
+
+        let arr2="1,2,3,4";
+        if(!Array.isArray(arr2)){
+        console.log("not array");
+    }else{
+        arr2.forEach(function(item){
+        console.log(item*2)
+        });
+    }
+
+    let arr3="1,2,3,4,5";
+    for(num2 of arr3){
+         console.log(num2);
+         
+    };
+    </script>
+    //string in loop using for of loop
+</body>
+</html>
