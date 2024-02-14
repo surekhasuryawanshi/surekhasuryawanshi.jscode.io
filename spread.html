@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let product=[
+            {apple:10,mango:12,orange:15},
+            {orange:13,mango:2,banana:15},
+            {apple:5,mango:12,banana:15},
+        ]
+        //console.log(product);
+
+        let productobj = {};
+        product.forEach(element =>{
+            //console.log(ele);
+            for(ele in element){
+            if(productobj[ele]){
+                productobj[ele]=productobj[ele]+element[ele];
+            }else{
+                productobj[ele]=element[ele]
+            }
+            }
+        });
+        console.log("product count", productobj);
+    </script>
+</body>
+</html>
