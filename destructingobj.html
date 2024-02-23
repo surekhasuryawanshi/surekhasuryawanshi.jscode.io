@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //destructing object
+        let student={
+            name:"abc",
+            age:40
+        };
+        //console.log(student);
+        //let sname=student.name;
+        //console.log(sname);
+        let {name:studentname,age:studentage}=student;
+        console.log(studentname);
+        console.log(studentage);
+    </script>
+</body>
+</html>
