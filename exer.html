@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="res"></div> -->
+    <input type="text" id="name">
+    <button onclick="greet()">
+         greet
+    </button>
+    <div class="greet"></div>
+
+    <script type="text/javascript">
+        // var x=false;
+        // var y=false;
+        // var z=x && y;
+       // var x=5;
+        //var y=6;
+        // y +=x;
+        //y *=x;
+        //z= x > y ?"yes" : "no";
+        //document.getElementById('res').innerHTML = y;
+        function greet(){
+            var name =document.getElementById('name').value;
+            var string="hello "+name;
+            document.getElementsByClassName('greet')[0].innerHTML = string;
+        }
+    </script>
+</body>
+</html>
