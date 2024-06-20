@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+    <style>
+        body {
+            transition: background-color 0.5s; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the buttons to change the background color!</h1>
+    <button onclick="changeBackgroundColor('red')">Red</button>
+    <button onclick="changeBackgroundColor('blue')">Blue</button>
+    <button onclick="changeBackgroundColor('green')">Green</button>
+    <button onclick="changeBackgroundColor('yellow')">Yellow</button>
+    <button onclick="changeBackgroundColor('white')">White</button>
+    <button onclick="changeBackgroundColor('')">Reset</button> <!-- Resets to default -->
+    
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
