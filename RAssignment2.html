@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 7. Palindrome Checker:
+    Prompt the user for a string and determine if it's a palindrome or not. -->
+
+    <script>
+        // Prompting user for a string
+        const inputString = prompt("Enter a string: ").toLowerCase().replace(/[^a-z0-9]/g, '');
+
+        // Reversing the string
+        const reversedString = inputString.split('').reverse().join('');
+
+        // Checking if it's a palindrome
+        if (inputString === reversedString) {
+            console.log("The string '" + inputString + "' is a palindrome.");
+        } else {
+            console.log("The string '" + inputString + "' is not a palindrome.");
+        }
+
+    </script>
+</body>
+</html>
