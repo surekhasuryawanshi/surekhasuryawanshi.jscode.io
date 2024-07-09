@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Using filter method to separate positive and negative numbers
+       const numbers = [5, -3, 8, -1, -7, 2, -6, 10, 0];
+       const positive=[];
+       const negative=[];
+       for(let i=0; i<numbers.length;i++){
+        if(numbers[i]>=0){
+            positive.push(numbers[i]);
+        }
+        else{
+            negative.push(numbers[i]);
+        }
+       }
+       console.log(positive);
+       console.log(negative);
+       </script>
+</body>
+</html>
