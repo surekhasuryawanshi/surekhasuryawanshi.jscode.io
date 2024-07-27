@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const fun = function(func,count){
+        //     for(let i=1; i>=count; i++){
+        //         func()
+        //     }
+
+        // } 
+        // function print(){
+        //     console.log("hello");
+//         const oddeventdetector = function (req) {
+//     if (req === "odd") {
+//         // Define a function to check for odd numbers
+//         const odd = function (a) {
+//             // Correctly check if 'a' is odd
+//             if (a % 2 !== 0) {
+//                 console.log("ok");
+//             } else {
+//                 console.log("not ok");
+//             }
+//         }
+//         return odd;
+//     } else if (req === "even") {
+//         // Define a function to check for even numbers
+//         const even = function (a) {
+//             // Correctly check if 'a' is even
+//             if (a % 2 === 0) {
+//                 console.log("ok");
+//             } else {
+//                 console.log("not ok");
+//             }
+//         }
+//         return even;
+//     } else {
+//         console.log("invalid");
+//     }
+// }
+
+// // Example usage:
+// let request = "odd";
+// let checkOdd = oddeventdetector(request); // Get the function to check for odd numbers
+// checkOdd(3); // Call the function with a number to check if it's odd
+
+// request = "even";
+// let checkEven = oddeventdetector(request); // Get the function to check for even numbers
+// checkEven(4); // Call the function with a number to check if it's even
+    
+
+const oddeventdetector = function (req) {
+    if (req === "odd") {
+        // Define a function to check for odd numbers
+        return function (a) {
+            // Return true if 'a' is odd, otherwise false
+            return a % 2 !== 0;
+        }
+    } else if (req === "even") {
+        // Define a function to check for even numbers
+        return function (a) {
+            // Return true if 'a' is even, otherwise false
+            return a % 2 === 0;
+        }
+    } else {
+        // Handle invalid request
+        console.log("invalid");
+        return null;
+    }
+}
+
+// Example usage:
+let request = "odd";
+let isOdd = oddeventdetector(request); // Get the function to check for odd numbers
+if (isOdd !== null) {
+    console.log(isOdd(3)); // Output: true (since 3 is odd)
+    console.log(isOdd(4)); // Output: false (since 4 is not odd)
+}
+
+request = "even";
+let isEven = oddeventdetector(request); // Get the function to check for even numbers
+if (isEven !== null) {
+    console.log(isEven(4)); // Output: true (since 4 is even)
+    console.log(isEven(3)); // Output: false (since 3 is not even)
+}
+
+    </script>
+
+    <!-- ${}==string literal and string polarization -->
+</body>
+</html>
