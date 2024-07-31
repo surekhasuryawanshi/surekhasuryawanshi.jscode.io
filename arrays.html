@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr = [1, 2, 3, 4, 5];
+
+        arr.push(7);
+        console.log(arr);
+        arr.pop()
+        console.log(arr);
+        arr.unshift("element")
+        console.log(arr);
+        arr.shift()
+        console.log(arr);
+        const arr1 = arr.join()//convert array to string 
+        console.log(arr1);
+
+        const arr2 = ["siddhi", "om", "payal", "surekha"];
+        console.log(arr1);
+
+        const newarr = arr.concat(arr2);
+        console.log(newarr);
+
+        const arr3 = [78, 45, 67, 78];
+        const finalarr = [...arr, ...arr2, ...arr3];//it is a spread operator
+        console.log(finalarr);
+        //questional methods
+        console.log(arr2.includes("rohan"));
+        console.log(arr2.indexOf("rohan"));
+
+        //slice and splice
+
+        //slice is not display the last index it is take always the (last index-1) but splice is display the last index 
+        //but splice is delete the element from the exact array
+        console.log(arr.slice(2, 3));
+
+        console.log(arr.splice(2, 3));
+
+        const nayaarr = [4,5,6,[1,2,3],[1,7,8,9,["abc","xyz","dfg"]]];
+        const aurEkarr = nayaarr.flat(Infinity); 
+        console.log(nayaarr);
+
+//scrapping
+        let x=10;
+        let y=20;
+        let z=30;
+       console.log(Array.of(x,y,z));
+       console.log(Array.from("rohan"));
+    </script>
+</body>
+
+</html>
