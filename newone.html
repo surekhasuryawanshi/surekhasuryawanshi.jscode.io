@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let callby = function(res) {
+            if(res == "odd") {
+                return function(x) {
+                    console.log(!(x % 2 == 0));
+                }
+            } else if(res == "even") {
+                return function(x) {
+                    console.log(x % 2 == 0);
+                }
+            } else {
+                console.log("invalid");
+            }
+        }
+        let checkOdd = callby("odd");
+        checkOdd(3); 
+
+        let checkEven = callby("even");
+        checkEven(4); 
+        callby("other"); 
+    </script>
+
+</body>
+</html>
