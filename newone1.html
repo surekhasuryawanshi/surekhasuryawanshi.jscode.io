@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+  let num = 421356;
+
+// Convert the number to a string and split it into an array of digits
+let digits = num.toString().split('');
+console.log(digits);
+
+// Sort the digits in ascending order
+let ascending = digits.slice().sort((a, b) => a - b).join('');
+
+// Sort the digits in descending order
+let descending = digits.slice().sort((a, b) => b - a).join('');
+
+// Convert the sorted strings back to numbers
+ascending = parseInt(ascending, 10);
+descending = parseInt(descending, 10);
+
+console.log("Ascending:", ascending);   // Output: 123456
+console.log("Descending:", descending); // Output: 654321
+
+
+    </script>
+
+</body>
+</html>
