@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //test()
+        //let regx = /^([a-zA-Z ]){2,30}$/;
+        let regx=/nanded/;
+        console.log(regx.test("hello nanded"));
+        let regxnum = /^([0-9 ]){2,30}$/;
+        console.log(regxnum.test("5678788899"));
+        //exec()
+        console.log(regx.exec("hello nanded nanded"));
+        //match()
+        let str="nanded";
+        console.log(str.match(regx));
+    </script>
+</body>
+</html>
