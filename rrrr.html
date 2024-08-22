@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .img1{
+        width: 400px;
+        height: 300px;
+    }
+    .img3{
+        width: 400px;
+        height: 300px;
+    }
+</style>
+
+<body>
+    <h2>virat kohli</h2>
+    <div>
+        <img src="https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=2048x2048&w=is&k=20&c=KraJw0UatD1mMxZy7iBY3CwJnJWkYWS0xjUx2_ZLxGU="
+            alt="" class="img3 nature">
+            <img src="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg" alt="" class="img3 nature1">
+    </div>
+
+    <hr>
+    <br>
+    <br>
+    <br>
+    <div>
+        <img src="https://cdn.pixabay.com/photo/2021/09/13/08/18/blue-flower-6620619_640.jpg" alt="" class="img1">
+        <img src="https://cdn.pixabay.com/photo/2023/04/27/14/27/butterfly-7954767_640.jpg" alt=""  class="img2 img3">
+        <img src="https://cdn.pixabay.com/photo/2013/10/09/02/27/lake-192990_640.jpg" alt=""class="img3">
+    </div>
+
+    <script>
+        // function myfun(a,b){
+        //     if(a===b ){
+        //         console.log(a*b);
+        //     }
+        //     else{
+        //         console.log(a+b)
+        //     }
+        // }
+        // myfun(5,5);
+        // function fun1(a){
+        //     console.log()
+        // function fun2(b){
+        //     console.log(b)
+        //     function fun3(c){
+        //         console.log(c)
+        //     }
+        //     fun3(3);
+        // }
+        // fun2(2);
+        // }
+        // fun1(1);
+        let flw = document.getElementsByClassName('img1')
+        for (let i = 0; i < flw.length; i++) {
+            flw[i].src ="https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.jpg?s=2048x2048&w=is&k=20&c=KraJw0UatD1mMxZy7iBY3CwJnJWkYWS0xjUx2_ZLxGU=";
+            
+        }
+        let bird = document.getElementsByClassName('img2')
+        for (let j = 0; j < bird.length; j++) {
+           bird[j].src ="https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg"
+            
+        }
+        
+
+    </script>
+</body>
+
+</html>
