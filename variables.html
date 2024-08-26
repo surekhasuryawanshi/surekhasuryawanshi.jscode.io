@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a=100;
+    var b= 101;
+    var c= 103;
+    console.table([a,b,c]);
+
+
+    // const obj = {
+    //     age :25,
+    //     language: "java",
+    //     name :"siddhi patange",
+    //     arr : [1,2,3,4,5],
+    //     fun: function(){
+    //         return 100;
+    //     }
+    // }
+    // console.log(obj.arr[2]);
+    // console.log(`my name is ${obj.name}`);
+    // obj.surname ="suryawanshi";
+    // console.log(obj["surname"]);
+
+let person = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 25,
+    ssn: '123-456-2356'
+};
+
+
+let job = {
+    jobTitle: 'JavaScript Developer',
+    country: 'USA'
+};
+
+
+let employee = Object.assign(person, job);
+console.log(employee);
+
+
+const data1 =[
+    {
+        name:"siddhi", 
+        age:24
+    },
+    {
+        name:"surekha", 
+        age:24
+    },
+    {
+        name:"om", 
+        age:24
+    },
+]
+console.log(data1[2]);
+
+function age(){
+    return age;
+}
+console.log(25);
+
+const obj ={
+    name :"siddhi",
+    age:25,
+    language: "javascript"
+}
+console.log(obj);
+
+function details(newobj){
+    return `my name is ${newobj.name}, my age is ${newobj.age}, and i mentor ${newobj.language}`
+}
+const hold =details({
+    name:"predrag",
+    age:25,
+    language:"javascript"
+})
+console.log(hold);
+
+const arr =[1,2,3,4,5,6]
+function details_1(newarr){                              //javascript context
+    return newarr[3]
+}
+
+const hold1 = details_1([
+    1,2,3,4,5,6
+])
+console.log(hold1);
+
+
+console.log(`first${age}`);
+var age1=25;
+console.log(`second${age}`);
+
+console.log(this);   //this is pointing the current object and its prototype is window
+    </script>
+</body>
+</html>
